@@ -91,7 +91,7 @@ client = MongoClient('mongodb://localhost:27017/')
 db = client.location_points
 collection = db.Myanmar
 collection.drop()
-pickup_latitude,pickup_longitude=pickle.load(open('C:/Users/Administrator/Documents/Database/Myanmar/Myanmar_trip_data_Rev2.p','rb'))
+pickup_latitude,pickup_longitude=pickle.load(open('Myanmar_trip_data_Rev2.p','rb')) #Path to this file
 #rip_myanmar=pd.read_csv('C:/Users/Administrator/Documents/Database/Myanmar/trip_lat_long_list.csv')
 #trip_myanmar.rename(columns={'passengers_log_idÂ\xa0':'passengers_log_id','pickup_lattitude':'pickup_latitude', 'pickup_logitude':'pickup_longitude'},inplace=True)
 #trip_myanmar=trip_myanmar.dropna(axis=0,how='any')
