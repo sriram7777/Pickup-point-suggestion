@@ -87,10 +87,10 @@ def Selecting_points(nearby_points):
     #print cluster
     return (final_list[-4:,:-1])
 
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient('mongodb://sriram7777:fGZvpohiaBC456FRFpVg5hkdNHXhMfnJNKNrucPkRvPgKDbYLm2b14FinjPp7Dm1xn7n5qWkpe1eMiPVI8ogvg==@sriram7777.documents.azure.com:10255/?ssl=true&replicaSet=globaldb')
 db = client.location_points
 collection = db.Myanmar
-collection.drop()
+'''collection.drop()
 pickup_latitude,pickup_longitude=pickle.load(open('Myanmar_trip_data_Rev2.p','rb')) #Path to this file
 #rip_myanmar=pd.read_csv('C:/Users/Administrator/Documents/Database/Myanmar/trip_lat_long_list.csv')
 #trip_myanmar.rename(columns={'passengers_log_idÂ\xa0':'passengers_log_id','pickup_lattitude':'pickup_latitude', 'pickup_logitude':'pickup_longitude'},inplace=True)
@@ -103,7 +103,7 @@ for lat,long in zip(pickup_latitude,pickup_longitude):
     collection.insert_one({"booking_location":{"type": "Point","coordinates": [booking_long,booking_lat]}, "pickup_location":[lat,long]})
     
 collection.create_index([("booking_location",GEOSPHERE)])
-print("collection count is",collection.count())
+print("collection count is",collection.count())'''
 
 #to append all keys to the list
 api_key_list=[]
