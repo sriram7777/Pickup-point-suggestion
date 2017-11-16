@@ -1,6 +1,7 @@
+numpy==1.11.3
 pandas==0.19.2
 pymongo==3.5.1
 Flask==0.12
 Flask_RESTful==0.3.6
 haversine==0.4.5
-numpy==1.11.3
+
